@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入自定义CSS样式表 -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>登录页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        #captchaLoginForm, #passwordLoginForm {
+            display: none;
+        }
+        .captcha-input {
+            width: 200px;
+            padding: 5px;
+            font-size: 16px;
+        }
+        #captchaImg {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        #refreshBtn {
+            margin-top: 10px;
+        }
+        .login-btn img {
+            width: 30px;
+            height: 30px;
+        }
+        .login-btn {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>登录页面</h2>
+    <div id="passwordLoginForm">
+        <div class="form-group">
+            <label for="username">用户名：</label>
+            <input type="text" id="username" name="username" placeholder="请输入用户名">
+        </div>
+        <div class="form-group">
+            <label for="password">密码：</label>
+            <input type="password" id="password" name="password" placeholder="请输入密码">
+        </div>
+        <button id="loginBtn">账密登录</button>
+    </div>
+    <div id="captchaLoginForm">
+        <div class="form-group">
+            <label for="phone">手机号：</label>
+            <input type="text" id="phone" name="phone" placeholder="请输入手机号">
+        </div>
+        <div class="form-group">
+            <label for="captchaCode">验证码：</label>
+            <input type="text" id="captchaCode" class="captcha-input" placeholder="请输入验证码">
+            <img id="captchaImg" src="src/captcha.php" alt="验证码">
+            <button id="refreshBtn">刷新验证码</button>
+        </div>
+        <button id="captchaLoginBtn">验证码登录</button>
+    </div>
+    <button id="switchToCaptchaLoginBtn">切换到验证码登录</button>
+    <button id="switchToPasswordLoginBtn" style="display: none;">切换到账密登录</button>
+    <div>
+        <button class="login-btn" id="wxLoginBtn">
+            <img src="assets/img/wechat-icon.jpg" alt="微信">
+        </button>
+        <button class="login-btn" id="qqLoginBtn">
+            <img src="assets/img/qq-icon.png" alt="QQ">
+        </button>
+        <button class="login-btn" id="appleLoginBtn">
+            <img src="assets/img/apple-icon.jpg" alt="Apple">
+        </button>
+    </div>
+</div>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/mySdk.js"></script>
+</body>
+</html>

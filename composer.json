@@ -1,0 +1,21 @@
+{
+  "name": "tunshitiandi/tstdsdk",
+  "description": "A PHP SDK for handling user login and registration, including third-party logins for QQ and WeChat.",
+  "type": "library",
+  "require": {
+    "php": ">=7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "MySdk\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "maosaiwei",
+      "email": "172757163@qq.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "license": "MIT"
+}

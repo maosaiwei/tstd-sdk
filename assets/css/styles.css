@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background-color: #0056b3;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* 添加字体图标的样式 */
+.social-login button i {
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+.social-login button#qq-login {
+    background-color: #1CA1F3; /* QQ颜色 */
+}
+
+.social-login button#qq-login:hover {
+    background-color: #0E85D1;
+}
+
+.social-login button#wechat-login {
+    background-color: #7BB32E; /* 微信颜色 */
+}
+
+.social-login button#wechat-login:hover {
+    background-color: #5AA21D;
+}
+
+.social-login button#apple-login {
+    background-color: #000; /* 苹果颜色 */
+    color: #fff;
+}
+
+.social-login button#apple-login:hover {
+    background-color: #333;
+}
+
+
